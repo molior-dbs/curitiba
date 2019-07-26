@@ -8,13 +8,33 @@ Maintainer: André Roth <neolynx@gmail.com>
 Package: curitiba
 Architecture: all
 Pre-Depends: curitiba-debconfig
-Depends: ${misc:Depends}, net-tools, ifupdown, isc-dhcp-client,
+Depends: ${misc:Depends}, busybox, net-tools, ifupdown, isc-dhcp-client,
   iputils-ping, bash-completion, openssh-server, linux-image-amd64,
   grub-pc, rsyslog, acpi-support-base, acpid, sudo, locales, lvm2,
   dialog, bsdmainutils, systemd-sysv, libpam-systemd,
 # add some tools:
   tree, htop, bzip2, wget, telnet, man, psmisc, vim-nox, less, gawk,
   figlet, lolcat
+Description: DebConf19 Demo Project
+ Demo top level package
+
+Package: curitiba-vbox
+Architecture: all
+Pre-Depends: curitiba-debconfig
+Depends: ${misc:Depends}, busybox, net-tools, ifupdown, isc-dhcp-client,
+  iputils-ping, bash-completion, openssh-server, linux-image-amd64,
+  grub-pc, rsyslog, acpi-support-base, acpid, sudo, locales, lvm2,
+  dialog, bsdmainutils, systemd-sysv, libpam-systemd,
+# add some tools:
+  tree, htop, bzip2, wget, telnet, man, psmisc, vim-nox, less, gawk,
+  figlet, lolcat,
+# VirtualBox guest additions
+  virtualbox-guest-x11, virtualbox-guest-utils,
+  linux-headers-amd64, virtualbox-guest-dkms,
+# add desktop dependencies
+  xserver-xorg-video-vesa, xserver-xorg-input-evdev, libgl1-mesa-dri,
+  xserver-xorg-video-modesetting, xserver-xorg, lightdm, lxde, policykit-1,
+  lxterminal
 Description: DebConf19 Demo Project
  Demo top level package
 

@@ -44,7 +44,6 @@ case "$1" in
 
 echo
 echo -e "\e[36m\e[1mWelcome to DebConf in\e[0m"
-echo
 figlet Curitiba 2019 | lolcat -a
 EOF
         chown -R $SYSUSER:$SYSUSER $SYSHOME/
