@@ -1,3 +1,13 @@
+curitiba (0.6) stable; urgency=medium
+
+  * add lxd deployment
+  * add rasbian deployment
+  * add docker deployment
+  * add info deployment
+  * add vbox deployment
+
+ -- André Roth <neolynx@gmail.com>  Sun, 28 Jul 2019 18:00:01 +0200
+
 curitiba (0.1) stable; urgency=medium
 
   * Initial release.
