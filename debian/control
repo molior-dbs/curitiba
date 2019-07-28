@@ -41,7 +41,7 @@ Description: DebConf19 Demo Project
 Package: curitiba-container
 Architecture: all
 Pre-Depends: curitiba-debconfig
-Depends: ${misc:Depends},
+Depends: ${misc:Depends}, systemd-sysv,
 # add some tools:
   figlet, lolcat
 Description: DebConf19 Demo Project
