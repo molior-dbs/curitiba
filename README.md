@@ -21,7 +21,7 @@ Download http://molior.info/demo/curitiba_2019_0.7.docker.xz
 
 Import the docker image:
 ```shell
-$ xz -dc | docker image load
+$ xz -dc curitiba_2019_0.7.docker.xz | docker image load
 e68994e74546: Loading layer [==================================================>]  85.58MB/85.58MB
 Loaded image: curitiba:0.7
 ```
