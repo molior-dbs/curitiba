@@ -47,6 +47,18 @@ Depends: ${misc:Depends},
 Description: DebConf19 Demo Project
  Demo top level package
 
+Package: curitiba-rasbian
+Architecture: all
+Pre-Depends: curitiba-debconfig
+Depends: ${misc:Depends}, busybox, net-tools, ifupdown, isc-dhcp-client,
+  iputils-ping, bash-completion, openssh-server, raspberrypi-kernel, raspberrypi-bootloader,
+  sudo, locales, dialog, bsdmainutils, systemd-sysv, libpam-systemd,
+# add some tools:
+  tree, htop, bzip2, wget, telnet, man, psmisc, vim-nox, less, gawk,
+  figlet, lolcat
+Description: DebConf19 Demo Project - Rasbian SD card image
+ Demo top level package for Rasbian
+
 Package: curitiba-debconfig
 Section: misc
 Architecture: all
