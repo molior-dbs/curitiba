@@ -38,6 +38,15 @@ Depends: ${misc:Depends}, busybox, net-tools, ifupdown, isc-dhcp-client,
 Description: DebConf19 Demo Project
  Demo top level package
 
+Package: curitiba-container
+Architecture: all
+Pre-Depends: curitiba-debconfig
+Depends: ${misc:Depends},
+# add some tools:
+  figlet, lolcat
+Description: DebConf19 Demo Project
+ Demo top level package
+
 Package: curitiba-debconfig
 Section: misc
 Architecture: all
